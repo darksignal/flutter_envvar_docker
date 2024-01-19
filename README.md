@@ -25,7 +25,7 @@ The key points with the environment variables are in the first part of the Docke
 ARG VARC
 ARG VARF
 - To define the environment variables that will be used in the Flutter project on the build, using the `--build-arg` to pass the environment variables to the Flutter project.
-![App Screenshot](./screenshots/screenshot1.png)
+![App Screenshot](https://github.com/darksignal/flutter_envvar_docker/blob/main/screenshots/Screenshot1.png)
 
 ### Environment variables file
 I created a .env file that I will use as dynamic parameter to run the docker-compose file.
@@ -34,7 +34,7 @@ It contains only the environment variable I want to send to the Flutter project.
 
 ### Docker-Compose file and execution.
 In the Docker-Compose file, I defined the environment variables that will be used in the image build stage in Dockerfile.
-![App Screenshot](https://github.com/darksignal/flutter_envvar_docker/blob/main/screenshots/Screenshot2.png)]
+![App Screenshot](https://github.com/darksignal/flutter_envvar_docker/blob/main/screenshots/Screenshot2.png)
 
 ```	
 docker-compose --env-file variable.env up -d

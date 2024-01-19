@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  flutterenvvardocker:
+    image: flutter_envvar_docker
+    build:
+      context: .
+      dockerfile: ./Dockerfile          
+      args:
+        VARF: "${ENV_VARF}"
+    ports:
+      - 5000:5000
+    expose:
+      - 5000

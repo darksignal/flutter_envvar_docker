@@ -41,7 +41,7 @@ In the Docker-Compose file, I defined the environment variables that will be use
 docker-compose --env-file variable.env up -d
 ```	
 
-##Conclusion
+## Conclusion
 With this I could have different .env files and run the image with different values.
 For a better result I would use the environment variable values to name the image file and container to avoid conflicts.
 

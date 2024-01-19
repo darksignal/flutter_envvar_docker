@@ -31,6 +31,7 @@ ARG VARF
 I created a .env file that I will use as dynamic parameter to run the docker-compose file.
 It contains only the environment variable I want to send to the Flutter project.
 
+ENV_VARF="Found in file variable.env!!!"
 
 ### Docker-Compose file and execution.
 In the Docker-Compose file, I defined the environment variables that will be used in the image build stage in Dockerfile.
@@ -39,6 +40,11 @@ In the Docker-Compose file, I defined the environment variables that will be use
 ```	
 docker-compose --env-file variable.env up -d
 ```	
+
+##Conclusion
+With this I could have different .env files and run the image with different values.
+For a better result I would use the environment variable values to name the image file and container to avoid conflicts.
+
 
 ## Resources
 A few resources to get you started with Flutter project:
